@@ -1,6 +1,6 @@
 <div dir='rtl' lang='he'>
 
-#hit & run
+hit & run
 
 **tagline: משפט שיווקי קצר וקליט המתאר את המשחק**
 
