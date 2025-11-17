@@ -86,7 +86,9 @@
 •	קפיצה ארוכה יותר
 
 •	במשחק הזה 10 סיבובים ,כאשר כל שחקן בתור שלו צריך לזרוק את הכדור ואחרים ירדפו אחריו ,בסוף 10 הסיבובים הקבוצה שקיבלה יותר נקודות מנצית
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c70cf00c-8991-4130-bbc6-7944a526a1de" />
 
-<img width="1024" height="1536" alt="60bdee39-eb91-41b7-8971-6f228ed7d949" src="https://github.com/user-attachments/assets/6bc3ed33-954c-4907-8bd3-d44029133fcc" />
 
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/7cdf335c-42f8-467e-a399-0a69d62a8e39" />
 
