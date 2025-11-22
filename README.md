@@ -12,7 +12,7 @@ https://github.com/Game-Dev-Course-ArielUNI/Hit-and-Run/wiki#hit--run
 
 ---
 
-GameManager
+# GameManager
 
  ├── TurnManager
  
@@ -28,7 +28,7 @@ GameManager
  
       └── PileObject (x many)
 
-PlayerState
+# PlayerState
 
  ├── PlayerThrow
  
@@ -38,14 +38,14 @@ PlayerState
 
  
 
-EnemyTeamManager
+# EnemyTeamManager
 
  ├── EnemyAI (x many)
  
  └── EnemyThrow (one chosen enemy)
  
 
-BallPhysics
+# BallPhysics
 
  ├── BallHitDetector
  
