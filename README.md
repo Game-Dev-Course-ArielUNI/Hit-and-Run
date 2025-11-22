@@ -50,3 +50,108 @@ https://github.com/Game-Dev-Course-ArielUNI/Hit-and-Run/wiki#hit--run
  ├── BallHitDetector
  
  └── BallOwner
+
+ ---
+
+```mermaid
+
+ classDiagram
+    class GameManager {
+        -string state
+        -int roundScore
+        +StartRound()
+        +StartThrow()
+        +StartRun()
+        +EndRound()
+    }
+
+    class TurnManager {
+        -int playerIndex
+        -List<Player> teamA
+        -List<Player> teamB
+        +NextPlayer()
+        +IsGameOver()
+    }
+
+    class ScoreManager {
+        -int teamA_score
+        -int teamB_score
+        +AddPointsToTeamA()
+        +AddPointsToTeamB()
+    }
+
+    class PileController {
+        -List<PileObject> pileObjects
+        -int fallenCount
+        +OnBallHit()
+        +CountFallen()
+    }
+
+    class PlayerState {
+        -string currentState
+        +SetState()
+        +IsRunning()
+    }
+
+    class PlayerThrow {
+        +Aim()
+        +ThrowBall()
+    }
+
+    class PlayerRun {
+        +RunForward()
+        +DetectFinishLine()
+    }
+
+    class PlayerDodge {
+        +Jump()
+        +MoveLeft()
+        +MoveRight()
+    }
+
+    class BallPhysics {
+        -float force
+        +ApplyForce()
+        +Reset()
+    }
+
+    class BallHitDetector {
+        +OnHitPile()
+        +OnHitRunner()
+    }
+
+    class EnemyTeamManager {
+        -List<EnemyAI> enemies
+        +SendEnemyToBall()
+        +SelectThrower()
+    }
+
+    class EnemyBallPickup {
+        +PickupBall()
+    }
+
+    class EnemyThrow {
+        +AimAtPlayer()
+        +ThrowBall()
+    }
+
+    %% RELATIONSHIPS
+    GameManager --> TurnManager
+    GameManager --> ScoreManager
+    GameManager --> PileController
+    GameManager --> PlayerState
+
+    PlayerState --> PlayerThrow
+    PlayerState --> PlayerRun
+    PlayerState --> PlayerDodge
+
+    PlayerThrow --> BallPhysics
+    BallPhysics --> BallHitDetector
+
+    BallHitDetector --> EnemyTeamManager
+
+    EnemyTeamManager --> EnemyBallPickup
+    EnemyTeamManager --> EnemyThrow
+
+    PileController --> PileObject
+```
