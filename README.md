@@ -12,46 +12,6 @@ https://github.com/Game-Dev-Course-ArielUNI/Hit-and-Run/wiki#hit--run
 
 ---
 
-# GameManager
-
- ├── TurnManager
- 
- ├── ScoreManager
- 
- ├── ObstacleManager
- 
- ├── EnemyTeamManager
- 
- ├── PlayerState
- 
- └── PileController
- 
-      └── PileObject (x many)
-
-# PlayerState
-
- ├── PlayerThrow
- 
- ├── PlayerRun
- 
- └── PlayerDodge
-
- 
-
-# EnemyTeamManager
-
- ├── EnemyAI (x many)
- 
- └── EnemyThrow (one chosen enemy)
- 
-
-# BallPhysics
-
- ├── BallHitDetector
- 
- └── BallOwner
-
- ---
 
 ```mermaid
 
