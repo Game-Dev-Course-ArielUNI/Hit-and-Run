@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour
 
         // Stop movement ONLY HERE
         playerState.SetState(PlayerStateEnum.Finished);
+        UIManager.Instance.ShowWinText();
+
 
         // Optionally stop time if you want to freeze everything
         Time.timeScale = 0f;
