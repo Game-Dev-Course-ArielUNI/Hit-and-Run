@@ -197,8 +197,11 @@
 
 # 7.	עלילה: 
    
-    * איך תיראה הקשת הדרמטית של המשחק שלכם? (שרטטו גרף) 
-    <img width="300" height="300" alt="hit_run_dramatic_arc_color_english" src="https://github.com/user-attachments/assets/0693fffb-a18c-4f1d-9f65-8d4460bc80de" />
+    * איך תיראה הקשת הדרמטית של המשחק שלכם? (שרטטו גרף)
+    
+
+ <img width="2800" height="1200" alt="hit_run_dramatic_arc_color_english" src="https://github.com/user-attachments/assets/afbf95e3-1022-4263-8cd0-256b837f61e5" />
+
 
 ---
 
