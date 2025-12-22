@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 7ed759bef8183834db029298465a63bb
+  - enabled: 1
+    path: Assets/Scenes/easy/easy run.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/easy/easy-throw.unity
+    guid: 2b23777f02bd6a2449ff083d611ec7c8
+  - enabled: 1
+    path: Assets/Scenes/MEDIUM/medium run.unity
+    guid: 54df6fb64411ada418fef9724c5085fc
+  - enabled: 1
+    path: Assets/Scenes/MEDIUM/medium-throw.unity
+    guid: 0034741431e86094db31cdaa15a5536d
+  - enabled: 1
+    path: Assets/Scenes/HARD/hard run.unity
+    guid: 5fc63794676ef684ca2e2605252b50e1
+  - enabled: 1
+    path: Assets/Scenes/HARD/hard-throw.unity
+    guid: cc1929c21decc474386292ce460f2d8a
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_UseUCBPForAssetBundles: 0
