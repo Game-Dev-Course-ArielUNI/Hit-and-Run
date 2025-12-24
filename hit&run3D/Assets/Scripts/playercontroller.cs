@@ -14,31 +14,35 @@ public class playercontroller : MonoBehaviour
     public Animator animator;
 
     public bool isGrounded;
+    public LayerMask groundLayer;
+    public Transform groundCheck;
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        isGrounded = true;
         animator.SetBool("isgrounded", true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (playerManeger.isGamestarted)
-        //    return;
         direction.z = forwardspeed;
 
-        //isGrounded = Physics.CheckSphere(groundCheck.position, 0.17f, groundLayer);
-        //animator.SetBool("isGrounded", isGrounded);
+        isGrounded = Physics.CheckSphere(groundCheck.position, 0.17f, groundLayer);
+        animator.SetBool("isgrounded", isGrounded);
 
-        animator.SetBool("isgrounded", true);
+        
 
-        if ((controller.isGrounded))
+        if (isGrounded)
         {
-            direction.y = -1;
+            direction.y = -2;
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 jump();
-            } 
+
+            }
+            isGrounded = true;
+           animator.SetBool("isgrounded", true);
         }
         else
         {
@@ -85,8 +89,6 @@ public class playercontroller : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //if (playerManeger.isGamestarted)
-        //    return;
         controller.Move(direction*Time.fixedDeltaTime);
     }
 
@@ -94,6 +96,7 @@ public class playercontroller : MonoBehaviour
     {
         direction.y = jumpforce;
         animator.SetBool("isgrounded", false);
+        isGrounded = false;
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
