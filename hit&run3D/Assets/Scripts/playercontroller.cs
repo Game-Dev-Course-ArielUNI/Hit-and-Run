@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 public class playercontroller : MonoBehaviour
 {
@@ -18,6 +18,7 @@ public class playercontroller : MonoBehaviour
     public Transform groundCheck;
     void Start()
     {
+        animator=GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
         isGrounded = true;
         animator.SetBool("isgrounded", true);
@@ -28,7 +29,8 @@ public class playercontroller : MonoBehaviour
     {
         direction.z = forwardspeed;
 
-        isGrounded = Physics.CheckSphere(groundCheck.position, 0.17f, groundLayer);
+        isGrounded = Physics.CheckSphere(groundCheck.position, 0.1f, groundLayer);
+        Debug.Log(isGrounded);
         animator.SetBool("isgrounded", isGrounded);
 
         
