@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2438026478106639001}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tile 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,6 +88,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bf0556bc7d663974e9d8bbd9f7706ce6, type: 3}
       propertyPath: m_Name
       value: Road
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf0556bc7d663974e9d8bbd9f7706ce6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -180,13 +184,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: dcc99169d56ef7040bdf55f6ed8becd4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -516098083770646512, guid: dcc99169d56ef7040bdf55f6ed8becd4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dcc99169d56ef7040bdf55f6ed8becd4, type: 3}
       propertyPath: m_Name
       value: finish line
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dcc99169d56ef7040bdf55f6ed8becd4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dcc99169d56ef7040bdf55f6ed8becd4, type: 3}
       propertyPath: m_TagString
       value: finishLine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: dcc99169d56ef7040bdf55f6ed8becd4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
