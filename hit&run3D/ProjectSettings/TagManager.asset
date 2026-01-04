@@ -6,11 +6,16 @@ TagManager:
   tags:
   - obstacle
   - finishLine
+  - Pile
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
+<<<<<<< HEAD
   - Ground
+=======
+  - ground
+>>>>>>> 7793ebe88a3786302102a2d8aaea3d449031e7c3
   - Water
   - UI
   - 
