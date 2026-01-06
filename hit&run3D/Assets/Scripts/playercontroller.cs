@@ -29,19 +29,19 @@ public class playercontroller : MonoBehaviour
     {
         direction.z = forwardspeed;
 
-<<<<<<< HEAD
+
         isGrounded = Physics.CheckSphere(groundCheck.position, 0.17f, groundLayer);
-=======
-        isGrounded = Physics.CheckSphere(groundCheck.position, 0.1f, groundLayer);
+
+        //isGrounded = Physics.CheckSphere(groundCheck.position, 0.1f, groundLayer);
         Debug.Log(isGrounded);
->>>>>>> 7793ebe88a3786302102a2d8aaea3d449031e7c3
+       
         animator.SetBool("isgrounded", isGrounded);
 
         
 
         if (isGrounded)
         {
-            direction.y = -2;
+            direction.y = -1;
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 jump();
